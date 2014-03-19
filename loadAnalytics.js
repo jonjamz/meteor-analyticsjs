@@ -33,8 +33,3 @@ localAnalytics.load = function(apiKey) {
 };
 analytics=localAnalytics;
 window.analytics = analytics;
-
-// Load analytics.js with your API key, which will automatically load all of the
-// analytics integrations you've turned on for your account. Boosh!
-if(Meteor.settings && Meteor.settings.public !== undefined && Meteor.settings.public.analytics_api_key)
-	analytics.load(Meteor.settings.public.analytics_api_key);
